@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTHGENIE THE MEDICAL CHATBOAT login</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/login.css') }}">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+              <img src="{{ url_for('static',filename='img/logoset.png') }}" alt="" />
+            </div>
+        </a>
+
+        <form class="login-form" action="/login" method="POST">
+            <h2>Welcome Again!</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Log in</button>
+          </form>
+          {% if message %}
+            <p class="icm">{{ message }}</p>
+          {% endif %}
+          <p class="al">Don't have an account?<a href="signup.html">Sign up</a></p>
+
+    </header>
+</body>
+</html

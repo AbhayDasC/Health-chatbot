@@ -1,0 +1,44 @@
+body{
+    
+    margin: 0%;
+    background-image: url("/static/img/backgroundindex.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*FOR LOGO*/
+    
+.logo {
+    margin-left: 43%;
+    text-align: left;
+    
+    margin-right: 700px;
+}
+
+.logo img {
+    max-width: 55%;
+}
+
+.logo {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.responsive-iframe {
+    position: relative;
+    
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 800px;
+    margin-top: 10%;
+    margin-left: 6%;
+}

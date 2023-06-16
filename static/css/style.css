@@ -1,0 +1,156 @@
+body {
+  margin: 0%;
+  background-image: url("/static/img/backgroundindex.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+  margin-left:25%;
+  padding-bottom: 1%;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin-top: 1%;
+}
+
+.nav-links li {
+  margin-right: 150px;
+}
+
+.nav-links li a {
+  color: #161616;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.toggle_btn {
+  display: inline;
+  color: #2b2a2a;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  margin-right: 4%;
+  margin-top: 4%;
+}
+
+.toggle_btn{
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+
+#developers-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#developers-list {
+  margin: 0;
+  margin-left: 64%;
+  padding: 0;
+  list-style-type: none;
+  font-size: 140%;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: double;
+}
+
+#developers-list li {
+  padding: 10px;
+}
+
+#developers-list a {
+  text-decoration: none;
+  color: rgb(37, 39, 39);
+}
+
+.head {
+  position: fixed;
+  top: 15%;
+  left: 0%;
+  margin: 0%;
+  margin-left: 2%;
+  margin-top: 7%;
+  margin-right: 40%;
+  font-size: 75px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+p {
+  position: fixed;
+  top: 37%;
+  left: 0%;
+  margin-left: 2%;
+  margin-right: 1000px;
+  font-size: 33px;
+  font-family: verdana;
+}
+
+.getin {
+  position: fixed;
+  top: 74%;
+  left: 0%;
+  margin-left: 6%;
+  font-size: 230%;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.getin a {
+  text-decoration: none;
+  color: black;
+  padding: 7px 14px;
+}
+
+.image-container {
+  margin-left: 57%;
+  margin-bottom: 8%;
+  text-align: left;
+  padding: 10px;
+}
+
+.image-container img {
+  max-width: 78%;
+}
+
+.image-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen (max-width:1648px) {
+  .head {
+    position: fixed;
+    top: 15%;
+    left: 0%;
+    margin: 0%;
+    margin-left: 2%;
+    margin-top: 7%;
+    margin-right: 40%;
+    font-size: 60px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  
+} 
+

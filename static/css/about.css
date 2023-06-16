@@ -1,0 +1,92 @@
+body{
+    
+    margin: 0%;
+    background-image: url("image/backgroundindex.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-left: 1%;
+    text-align: left;
+    padding: 10px;
+    margin-right: 700px;
+}
+
+.logo img {
+    max-width: 19%;
+}
+
+.logo {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logobg {
+    margin-left: 66%;
+    margin-bottom: 10%;
+    text-align: left;
+    padding: 10px;
+    margin-right: 1px;
+}
+
+.logobg img {
+    max-width: 77%;
+}
+
+.logobg {
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+.abthd{
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 60%;
+    font-size: 60px;
+    font-family: monospace;
+}
+
+.abtpg{
+    margin-left: 2%;
+    margin-right:40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}   
+
+
+
+h3{
+    margin: 0%;
+    margin-left: 67%;
+    margin-right: 22%;
+    font-size: 35px;
+    margin-bottom: 11%;
+
+}
+
+h3{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.abtlg{
+    margin: 0%;
+    margin-left: 69%;
+    margin-right: 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.abtlg{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

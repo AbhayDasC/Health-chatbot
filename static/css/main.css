@@ -12,13 +12,10 @@ body{
     
 .logo {
     margin-left: 43%;
-    text-align: left;
-    
-    margin-right: 700px;
 }
 
 .logo img {
-    max-width: 55%;
+    max-width: 240px;
 }
 
 .logo {
@@ -28,17 +25,99 @@ body{
     left: 0;
 }
 
-.responsive-iframe {
-    position: relative;
-    
-}
+
 
 .responsive-iframe iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1000px;
-    height: 800px;
-    margin-top: 10%;
-    margin-left: 6%;
+    width: 77%;
+    height: 75vh;
+    margin-top: 9%;
+    margin-left: 11%;
+    justify-content: center;
+    border-radius: 1%;
+    
+}
+
+
+@media (max-width: 1440px) {
+
+    
+
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 77%;
+        height: 75vh;
+        margin-top: 14%;
+        margin-left: 11%;
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 1024px) {
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 77%;
+        height: 75vh;
+        margin-top: 16%;
+        margin-left: 11%;
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        margin-left: 35%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 77%;
+        height: 75vh;
+        margin-top: 22%;
+        margin-left: 11%;
+        justify-content: center;
+        
+    }
+}
+
+
+@media (max-width: 390px) {
+
+    .logo {
+        margin-left: 22%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+    
+
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 85.5vh;
+        margin-top: 30%;
+        margin-left: 0%;
+        justify-content: center;
+        
+    }
 }

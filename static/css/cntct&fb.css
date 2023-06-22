@@ -1,6 +1,6 @@
 body{
   margin: 0%;
-  background-image: url("image/backgroundindex.jpg");
+  background-image: url("/static/img/bg2.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -104,6 +104,13 @@ h2 {
     background-color: #26353a;
   }
 
+  .msg {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: blue;
+  }
+
   .about {
     margin-bottom: 10.5%;
     margin-right: 10%;
@@ -128,6 +135,7 @@ h2 {
   
   .contact-info p {
     margin-bottom: 10px;
+    font-size: 25px;
   }
 
   

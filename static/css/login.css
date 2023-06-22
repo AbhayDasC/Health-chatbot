@@ -115,7 +115,7 @@ body{
 
 @media (max-width:750px) {
   .login-form {
-    text-align: center;
+    
     width: 250px;
     height: 230px;
     margin: 0 auto;
@@ -177,7 +177,7 @@ body{
   }
 
   .al{
-    text-align: center;
+    
     padding: 60px;
     font-size: 10px;
   }

@@ -10,9 +10,11 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="{{ url_for('static',filename='img/logoset.png') }}" alt="" />
-        </div>.
+        <a href="/">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='img/logoset.png') }}" alt="" />
+            </div>
+        </a>
         
         
     </header>
@@ -22,30 +24,6 @@
             allow="microphone;"
             src="https://console.dialogflow.com/api-client/demo/embedded/1a401024-df1e-4064-b12a-e78556075ef3">
         </iframe>
-
-        <!-- <iframe
-            style="border: none;"
-            height="600px"
-            width="400px"
-            src="https://widget.kommunicate.io/chat?appId=YOUR_APP_ID"
-            allow="microphone; geolocation;">
-        </iframe> -->
-
-        <script type="text/javascript">
-            (function(d, m){
-                    var kommunicateSettings = 
-                        {"appId":"APP_ID","popupWidget":true,"automaticChatOpenOnNavigation":true};
-                         kommunicateSettings.onInit = function () {
-                    Kommunicate.launchConversation();
-            
-                  }
-                    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-                    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-                    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-                    window.kommunicate = m; m._globals = kommunicateSettings;
-                })(document, window.kommunicate || {});
-            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-        </script>
     </div>
 
    

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -13,13 +14,31 @@ class UserData(db.Model):
     gmail = db.Column(db.String)
     Password =  db.Column(db.String)
 
-
-
+class UserFeedback(db.Model):
+    __tablename__='Userfeedback'
+    fid = db.Column(db.Integer, primary_key=True,autoincrement=True)
+    name = db.Column(db.String)
+    mail = db.Column(db.String)
+    msg =  db.Column(db.String)
 
 @app.route('/')
 def index():
     return render_template('index.html')   
 
+@app.route('/contct&fb',methods=['POST','GET'])
+def contct():
+    if request.method == 'POST':
+         user__name = request.form.get('name')
+         email_ = request.form.get('email')
+         messg = request.form.get('message')
+         userfeedback=UserFeedback(name=user__name,mail=email_,msg=messg)  
+         db.session.add(userfeedback)    
+         db.session.commit()
+         insert_fid =userfeedback.fid
+         return render_template('contct&fb.html', message="Feedback submitted")
+    else:
+         return render_template('contct&fb.html')
+  
 @app.route('/login',methods=['POST','GET'])
 def Loginp():
     if request.method == 'POST':
@@ -34,16 +53,13 @@ def Loginp():
         else:
             return render_template('login.html', message="User does not exist !")    
     else:
-        print(20) 
         return render_template('login.html')  
 
 @app.route('/about',methods=['POST','GET'])
 def about():
     return render_template('about.html')
 
-@app.route('/contct&fb',methods=['POST','GET'])
-def contct():
-    return render_template('contct&fb.html')
+
 
 @app.route('/signup',methods=['POST','GET'])
 def signup():
@@ -58,13 +74,11 @@ def signup():
         return render_template('main.html')
     else:
         return render_template('signup.html')   
- 
+
 if __name__ == '__main__':
     with app.app_context():
-        # Create the database
         db.create_all()
 
-    # Run the Flask application
     app.run(debug=True)
     
 

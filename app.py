@@ -14,6 +14,8 @@ class UserData(db.Model):
     Password =  db.Column(db.String)
 
 
+
+
 @app.route('/')
 def index():
     return render_template('index.html')   

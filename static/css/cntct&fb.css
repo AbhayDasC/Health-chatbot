@@ -52,8 +52,6 @@ h2 {
     border: 2px solid #444444;
   }
 
- 
-  
   label {
     display: block;
     margin-bottom: 10px;
@@ -70,9 +68,7 @@ h2 {
   input[type="email"]{
     width: 100%;
     padding: 10px;
-    /*margin-right: 900%;*/
     border: 1px solid #ccc;
-    
     border-radius: 5px;
     resize: vertical;
   }
@@ -97,7 +93,6 @@ h2 {
     cursor: pointer;
     margin-left: 0%;
     margin-top: 30px;
-   
   }
   
   button[type="submit"]:hover {
@@ -137,5 +132,3 @@ h2 {
     margin-bottom: 10px;
     font-size: 25px;
   }
-
-  

@@ -4,6 +4,8 @@ body{
     background-image: url("/static/img/backgroundindex.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .logo {
@@ -37,12 +39,10 @@ body{
 }
 
 .logobg {
-
     position: fixed;
     bottom: 0;
     right: 0;
 }
-
 
 .abthd{
     margin-top: 10%;
@@ -59,15 +59,12 @@ body{
     font-size: 20px;
 }   
 
-
-
 h3{
     margin: 0%;
     margin-left: 67%;
     margin-right: 22%;
     font-size: 35px;
     margin-bottom: 11%;
-
 }
 
 h3{

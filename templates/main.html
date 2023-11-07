@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEALTHGENIE THE MEDICAL CHATBOAT main</main></title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
@@ -14,11 +14,9 @@
             <div class="logo">
                 <img src="{{ url_for('static',filename='img/logoset.png') }}" alt="" />
             </div>
-        </a>
-        
-        
+        </a>  
     </header>
-
+    
     <div class="responsive-iframe">
         <iframe
             allow="microphone;"
@@ -26,7 +24,8 @@
         </iframe>
     </div>
 
-   
-    
+    <div class="logout">
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    </div>
 </body>
 </html>
